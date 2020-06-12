@@ -24,3 +24,9 @@ Route::get('/about', [
     'as' => 'about_path', //nom de la route
     'uses' => 'PagesController@about' // NomControlleur@action
 ]);
+
+
+Route::get('/contact', [
+    'as' => 'contact_path', //nom de la route
+    'uses' => 'ContactsController@create' // NomControlleur@action
+]);
